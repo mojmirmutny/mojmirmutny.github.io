@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mojmir Mutný | Mojmír Mutný</title>
+    <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
+      <atom:link href="https://mojmirmutny.github.io/authors/mojmir-mutny/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mojmir Mutný</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Mojmir Mutný</title>
+      <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
+    </image>
+    
+    <item>
+      <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2020-b/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2020-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental Design for Optimization of Orthogonal Projection Pursuit Models</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
+      <link>https://mojmirmutny.github.io/publication/tapia-2019-makesense/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/tapia-2019-makesense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient High Dimensional Bayesian Optimization with Additivity and Quadrature Fourier Features</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2018-b/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2018-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic second-order optimization via von Neumann series</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2016-stochastic/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2016-stochastic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

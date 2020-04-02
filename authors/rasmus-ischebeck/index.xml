@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rasmus Ischebeck | Mojmír Mutný</title>
+    <link>https://mojmirmutny.github.io/authors/rasmus-ischebeck/</link>
+      <atom:link href="https://mojmirmutny.github.io/authors/rasmus-ischebeck/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rasmus Ischebeck</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Rasmus Ischebeck</title>
+      <link>https://mojmirmutny.github.io/authors/rasmus-ischebeck/</link>
+    </image>
+    
+    <item>
+      <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
