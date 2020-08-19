@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mojmir Mutný | Mojmír Mutný</title>
+    <title>Mojmir Mutny | Mojmír Mutný</title>
     <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/mojmir-mutny/index.xml" rel="self" type="application/rss+xml" />
-    <description>Mojmir Mutný</description>
+    <description>Mojmir Mutny</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>Mojmir Mutný</title>
+      <title>Mojmir Mutny</title>
       <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
     </image>
     
@@ -25,6 +25,14 @@
       <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coresets via Bilevel Optimization for Continual Learning and Streaming</title>
+      <link>https://mojmirmutny.github.io/publication/borsos-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/borsos-2020/</guid>
       <description></description>
     </item>
     
