@@ -1,7 +1,7 @@
 ---
 title: "Coresets via Bilevel Optimization for Continual Learning and Streaming"
 date: 2020-01-01
-publishDate: 2020-08-19T13:25:37.433129Z
+publishDate: 2020-08-19T13:25:28.583737Z
 authors: ["Zalan Borsos", "Mojmir Mutny", "Andreas Krause"]
 publication_types: ["2"]
 abstract: ""
