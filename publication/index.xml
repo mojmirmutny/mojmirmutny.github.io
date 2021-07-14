@@ -5,12 +5,28 @@
     <link>https://mojmirmutny.github.io/publication/</link>
       <atom:link href="https://mojmirmutny.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Publications</title>
       <link>https://mojmirmutny.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>No-regret Algorithms for Capturing Events in Poisson Point Processes</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2021-a/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2021-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Controllers for Unstable Linear Quadratic Regulators from a Single Trajectory</title>
+      <link>https://mojmirmutny.github.io/publication/treven-2020/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/treven-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
@@ -33,14 +49,6 @@
       <link>https://mojmirmutny.github.io/publication/borsos-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/borsos-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Controllers for Unstable Linear Quadratic Regulators from a Single Trajectory</title>
-      <link>https://mojmirmutny.github.io/publication/treven-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/treven-2020/</guid>
       <description></description>
     </item>
     

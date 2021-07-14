@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/publication_types/1/</link>
       <atom:link href="https://mojmirmutny.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>1</title>
       <link>https://mojmirmutny.github.io/publication_types/1/</link>
     </image>
+    
+    <item>
+      <title>No-regret Algorithms for Capturing Events in Poisson Point Processes</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2021-a/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2021-a/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>

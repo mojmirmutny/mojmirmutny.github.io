@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/authors/andreas-krause/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/andreas-krause/index.xml" rel="self" type="application/rss+xml" />
     <description>Andreas Krause</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Andreas Krause</title>
       <link>https://mojmirmutny.github.io/authors/andreas-krause/</link>
     </image>
+    
+    <item>
+      <title>Learning Controllers for Unstable Linear Quadratic Regulators from a Single Trajectory</title>
+      <link>https://mojmirmutny.github.io/publication/treven-2020/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/treven-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
@@ -25,22 +33,6 @@
       <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coresets via Bilevel Optimization for Continual Learning and Streaming</title>
-      <link>https://mojmirmutny.github.io/publication/borsos-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/borsos-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Controllers for Unstable Linear Quadratic Regulators from a Single Trajectory</title>
-      <link>https://mojmirmutny.github.io/publication/treven-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/treven-2020/</guid>
       <description></description>
     </item>
     
