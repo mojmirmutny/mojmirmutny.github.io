@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mojmir Mutný | Mojmír Mutný</title>
+    <title>Mojmír Mutný</title>
     <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/mojmir-mutny/index.xml" rel="self" type="application/rss+xml" />
-    <description>Mojmir Mutný</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <description>Mojmír Mutný</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>Mojmir Mutný</title>
+      <title>Mojmír Mutný</title>
       <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
     </image>
     
     <item>
-      <title>No-regret Algorithms for Capturing Events in Poisson Point Processes</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2021-a/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2021-a/</guid>
+      <title>Diversified Sampling for Batched Bayesian Optimization with Determinantal Point Processes</title>
+      <link>https://mojmirmutny.github.io/publication/nava-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/nava-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Summarization via Bilevel Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/borsos-2021-data/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/borsos-2021-data/</guid>
       <description></description>
     </item>
     
@@ -29,9 +37,25 @@
     </item>
     
     <item>
+      <title>No-regret Algorithms for Capturing Events in Poisson Point Processes</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2021-a/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2021-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
+      <link>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
       <link>https://mojmirmutny.github.io/publication/mutny-2020-b/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2020-b/</guid>
       <description></description>
     </item>
@@ -39,15 +63,23 @@
     <item>
       <title>Experimental Design for Optimization of Orthogonal Projection Pursuit Models</title>
       <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensing Cox Processes via Posterior Sampling and Positive Bases</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2022/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
       <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
       <description></description>
     </item>
@@ -55,7 +87,7 @@
     <item>
       <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
       <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
       <description></description>
     </item>

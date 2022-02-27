@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/authors/moritz-bacher/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/moritz-bacher/index.xml" rel="self" type="application/rss+xml" />
     <description>Moritz Bächer</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Moritz Bächer</title>
       <link>https://mojmirmutny.github.io/authors/moritz-bacher/</link>
     </image>
+    
+    <item>
+      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
+      <link>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>

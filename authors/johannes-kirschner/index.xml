@@ -5,7 +5,7 @@
     <link>https://mojmirmutny.github.io/authors/johannes-kirschner/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/johannes-kirschner/index.xml" rel="self" type="application/rss+xml" />
     <description>Johannes Kirschner</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Johannes Kirschner</title>
@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>Efficient Pure Exploration for Combinatorial Bandits with Semi-Bandit Feedback</title>
+      <link>https://mojmirmutny.github.io/publication/jourdan-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/jourdan-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Experimental Design for Optimization of Orthogonal Projection Pursuit Models</title>
       <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
       <description></description>
     </item>
@@ -23,7 +31,7 @@
     <item>
       <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
       <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
       <description></description>
     </item>
@@ -31,7 +39,7 @@
     <item>
       <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
       <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
       <description></description>
     </item>

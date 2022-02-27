@@ -5,7 +5,7 @@
     <link>https://mojmirmutny.github.io/authors/andreas-adelmann/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/andreas-adelmann/index.xml" rel="self" type="application/rss+xml" />
     <description>Andreas Adelmann</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Andreas Adelmann</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
       <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
       <description></description>
     </item>
