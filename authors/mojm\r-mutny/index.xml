@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/authors/mojm%5Cr-mutny/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/mojm%5Cr-mutny/index.xml" rel="self" type="application/rss+xml" />
     <description>Mojm\ŕ Mutný</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Mojm\ŕ Mutný</title>
       <link>https://mojmirmutny.github.io/authors/mojm%5Cr-mutny/</link>
     </image>
+    
+    <item>
+      <title>Experimental Design of Linear Functionals in Reproducing Kernel Hilbert Spaces</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2022-b/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2022-b/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Efficient Pure Exploration for Combinatorial Bandits with Semi-Bandit Feedback</title>

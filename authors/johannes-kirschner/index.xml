@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/authors/johannes-kirschner/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/johannes-kirschner/index.xml" rel="self" type="application/rss+xml" />
     <description>Johannes Kirschner</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Johannes Kirschner</title>
       <link>https://mojmirmutny.github.io/authors/johannes-kirschner/</link>
     </image>
+    
+    <item>
+      <title>Tuning Particle Accelerators with Safety Constraints using Bayesian Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Efficient Pure Exploration for Combinatorial Bandits with Semi-Bandit Feedback</title>

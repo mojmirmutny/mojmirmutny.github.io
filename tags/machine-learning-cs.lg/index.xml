@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning (cs.LG) | Mojmír Mutný</title>
+    <link>https://mojmirmutny.github.io/tags/machine-learning-cs.lg/</link>
+      <atom:link href="https://mojmirmutny.github.io/tags/machine-learning-cs.lg/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine Learning (cs.LG)</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Machine Learning (cs.LG)</title>
+      <link>https://mojmirmutny.github.io/tags/machine-learning-cs.lg/</link>
+    </image>
+    
+    <item>
+      <title>Active Exploration via Experiment Design in Markov Chains</title>
+      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tuning Particle Accelerators with Safety Constraints using Bayesian Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,28 @@
     <link>https://mojmirmutny.github.io/publication_types/0/</link>
       <atom:link href="https://mojmirmutny.github.io/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
     <description>0</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>0</title>
       <link>https://mojmirmutny.github.io/publication_types/0/</link>
     </image>
+    
+    <item>
+      <title>Active Exploration via Experiment Design in Markov Chains</title>
+      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tuning Particle Accelerators with Safety Constraints using Bayesian Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Summarization via Bilevel Optimization</title>
