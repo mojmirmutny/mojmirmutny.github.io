@@ -1,78 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mojmír Mutný</title>
+    <title>Mojmir Mutný | Mojmír Mutný</title>
     <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
       <atom:link href="https://mojmirmutny.github.io/authors/mojmir-mutny/index.xml" rel="self" type="application/rss+xml" />
-    <description>Mojmír Mutný</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <description>Mojmir Mutný</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>Mojmír Mutný</title>
+      <title>Mojmir Mutný</title>
       <link>https://mojmirmutny.github.io/authors/mojmir-mutny/</link>
     </image>
-    
-    <item>
-      <title>Active Exploration via Experiment Design in Markov Chains</title>
-      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2206-14332/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tuning Particle Accelerators with Safety Constraints using Bayesian Optimization</title>
-      <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Summarization via Bilevel Optimization</title>
-      <link>https://mojmirmutny.github.io/publication/borsos-2021-data/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/borsos-2021-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
-      <link>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
-      <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
-      <link>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-swissfel/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Efficient High Dimensional Bayesian Optimization with Additivity and Quadrature Fourier Features</title>
       <link>https://mojmirmutny.github.io/publication/mutny-2018-b/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/mutny-2018-b/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stochastic second-order optimization via von Neumann series</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2016-stochastic/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2016-stochastic/</guid>
       <description></description>
     </item>
     
