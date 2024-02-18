@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Melis İlayda Bal | Mojmír Mutný</title>
+    <link>https://mojmirmutny.github.io/authors/melis-ilayda-bal/</link>
+      <atom:link href="https://mojmirmutny.github.io/authors/melis-ilayda-bal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Melis İlayda Bal</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Melis İlayda Bal</title>
+      <link>https://mojmirmutny.github.io/authors/melis-ilayda-bal/</link>
+    </image>
+    
+    <item>
+      <title>Optimistic Games for Combinatorial Bayesian Optimization with Applications to Protein Design</title>
+      <link>https://mojmirmutny.github.io/publication/bal-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/bal-2023/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

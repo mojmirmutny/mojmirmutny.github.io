@@ -21,14 +21,6 @@
     </item>
     
     <item>
-      <title>Diversified Sampling for Batched Bayesian Optimization with Determinantal Point Processes</title>
-      <link>https://mojmirmutny.github.io/publication/nava-2022/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/nava-2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Tuning Particle Accelerators with Safety Constraints using Bayesian Optimization</title>
       <link>https://mojmirmutny.github.io/publication/https-doi-org-10-48550-arxiv-2203-13968/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
@@ -45,42 +37,10 @@
     </item>
     
     <item>
-      <title>No-regret Algorithms for Capturing Events in Poisson Point Processes</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2021-a/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2021-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
       <link>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/tapia-2020-makesense/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2020-b/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2020-b/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Experimental Design for Optimization of Orthogonal Projection Pursuit Models</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sensing Cox Processes via Posterior Sampling and Positive Bases</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2022/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2022/</guid>
       <description></description>
     </item>
     

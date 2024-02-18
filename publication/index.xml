@@ -5,12 +5,100 @@
     <link>https://mojmirmutny.github.io/publication/</link>
       <atom:link href="https://mojmirmutny.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Publications</title>
       <link>https://mojmirmutny.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Sequential Experimental Design and Optimization with Structural Assumptions: Additivity and Subspaces</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transition Constrained Bayesian Optimization via Markov Decision Processes</title>
+      <link>https://mojmirmutny.github.io/publication/folch-2024-transition/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/folch-2024-transition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Exploration via Experiment Design in Markov Chains</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficiently Navigating the Sequence-Activity Landscape of an Artificial Metalloenzyme by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Sequence-Activity Mapping and Evolution of Artificial Metalloenzymes by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2024/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Likelihood Ratio Confidence Sets for Sequential Decision Making</title>
+      <link>https://mojmirmutny.github.io/publication/emmenegger-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/emmenegger-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimistic Games for Combinatorial Bayesian Optimization with Applications to Protein Design</title>
+      <link>https://mojmirmutny.github.io/publication/bal-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/bal-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submodular Reinforcement Learning</title>
+      <link>https://mojmirmutny.github.io/publication/prajapat-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/prajapat-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental Design of Linear Functionals in Reproducing Kernel Hilbert Spaces</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2022-b/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2022-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tuning particle accelerators with safety constraints using Bayesian optimization</title>
+      <link>https://mojmirmutny.github.io/publication/kirchner-2022/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirchner-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diversified Sampling for Batched Bayesian Optimization with Determinantal Point Processes</title>
+      <link>https://mojmirmutny.github.io/publication/nava-2022/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/nava-2022/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Active Exploration via Experiment Design in Markov Chains</title>
@@ -21,18 +109,10 @@
     </item>
     
     <item>
-      <title>Diversified Sampling for Batched Bayesian Optimization with Determinantal Point Processes</title>
-      <link>https://mojmirmutny.github.io/publication/nava-2022/</link>
+      <title>Sensing Cox Processes via Posterior Sampling and Positive Bases</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/nava-2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Experimental Design of Linear Functionals in Reproducing Kernel Hilbert Spaces</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2022-b/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2022-b/</guid>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2022/</guid>
       <description></description>
     </item>
     
@@ -49,6 +129,14 @@
       <link>https://mojmirmutny.github.io/publication/borsos-2021-data/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://mojmirmutny.github.io/publication/borsos-2021-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Summarization via Bilevel Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/borsos-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/borsos-2021/</guid>
       <description></description>
     </item>
     
@@ -85,6 +173,14 @@
     </item>
     
     <item>
+      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
+      <link>https://mojmirmutny.github.io/publication/tapia-2020/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/tapia-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Convergence Analysis of Block Coordinate Algorithms with Determinantal Sampling</title>
       <link>https://mojmirmutny.github.io/publication/mutny-2020-b/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -109,18 +205,26 @@
     </item>
     
     <item>
-      <title>Sensing Cox Processes via Posterior Sampling and Positive Bases</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2022/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2022/</guid>
+      <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive and Safe Bayesian Optimization in High Dimensions via One-Dimensional Subspaces</title>
-      <link>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</link>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-linebo/</guid>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimization for Fast and Safe Parameter Tuning of SwissFEL</title>
+      <link>https://mojmirmutny.github.io/publication/kirschner-2019-b/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirschner-2019-b/</guid>
       <description></description>
     </item>
     

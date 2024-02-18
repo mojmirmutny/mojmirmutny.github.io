@@ -5,7 +5,7 @@
     <link>https://mojmirmutny.github.io/publication_types/2/</link>
       <atom:link href="https://mojmirmutny.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>2</title>
@@ -13,18 +13,58 @@
     </image>
     
     <item>
-      <title>Experimental Design of Linear Functionals in Reproducing Kernel Hilbert Spaces</title>
-      <link>https://mojmirmutny.github.io/publication/mutny-2022-b/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/mutny-2022-b/</guid>
+      <title>Sequential Experimental Design and Optimization with Structural Assumptions: Additivity and Subspaces</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2024/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Learning Controllers for Unstable Linear Quadratic Regulators from a Single Trajectory</title>
-      <link>https://mojmirmutny.github.io/publication/treven-2021/</link>
+      <title>Efficiently Navigating the Sequence-Activity Landscape of an Artificial Metalloenzyme by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Sequence-Activity Mapping and Evolution of Artificial Metalloenzymes by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2024/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimistic Games for Combinatorial Bayesian Optimization with Applications to Protein Design</title>
+      <link>https://mojmirmutny.github.io/publication/bal-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/bal-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submodular Reinforcement Learning</title>
+      <link>https://mojmirmutny.github.io/publication/prajapat-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/prajapat-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tuning particle accelerators with safety constraints using Bayesian optimization</title>
+      <link>https://mojmirmutny.github.io/publication/kirchner-2022/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/kirchner-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Summarization via Bilevel Optimization</title>
+      <link>https://mojmirmutny.github.io/publication/borsos-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/treven-2021/</guid>
+      <guid>https://mojmirmutny.github.io/publication/borsos-2021/</guid>
       <description></description>
     </item>
     
@@ -37,10 +77,10 @@
     </item>
     
     <item>
-      <title>Coresets via Bilevel Optimization for Continual Learning and Streaming</title>
-      <link>https://mojmirmutny.github.io/publication/borsos-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mojmirmutny.github.io/publication/borsos-2020/</guid>
+      <title>MakeSense: Automated Sensor Design for Proprioceptive Soft Robots</title>
+      <link>https://mojmirmutny.github.io/publication/tapia-2020/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/tapia-2020/</guid>
       <description></description>
     </item>
     

@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/code/</link>
       <atom:link href="https://mojmirmutny.github.io/code/index.xml" rel="self" type="application/rss+xml" />
     <description>Codes</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Codes</title>
       <link>https://mojmirmutny.github.io/code/</link>
     </image>
+    
+    <item>
+      <title>Sensing Poisson Point Processes for Python (sensepy)</title>
+      <link>https://mojmirmutny.github.io/code/sensepy/</link>
+      <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/code/sensepy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Quadrature Fourier Features (QFF) for Python</title>

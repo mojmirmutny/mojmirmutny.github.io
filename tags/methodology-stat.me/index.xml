@@ -5,12 +5,20 @@
     <link>https://mojmirmutny.github.io/tags/methodology-stat.me/</link>
       <atom:link href="https://mojmirmutny.github.io/tags/methodology-stat.me/index.xml" rel="self" type="application/rss+xml" />
     <description>Methodology (stat.ME)</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Methodology (stat.ME)</title>
       <link>https://mojmirmutny.github.io/tags/methodology-stat.me/</link>
     </image>
+    
+    <item>
+      <title>Active Exploration via Experiment Design in Markov Chains</title>
+      <link>https://mojmirmutny.github.io/publication/mutny-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/mutny-2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Active Exploration via Experiment Design in Markov Chains</title>

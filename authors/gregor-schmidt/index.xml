@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gregor Schmidt | Mojmír Mutný</title>
+    <link>https://mojmirmutny.github.io/authors/gregor-schmidt/</link>
+      <atom:link href="https://mojmirmutny.github.io/authors/gregor-schmidt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gregor Schmidt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Gregor Schmidt</title>
+      <link>https://mojmirmutny.github.io/authors/gregor-schmidt/</link>
+    </image>
+    
+    <item>
+      <title>Efficiently Navigating the Sequence-Activity Landscape of an Artificial Metalloenzyme by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Sequence-Activity Mapping and Evolution of Artificial Metalloenzymes by Active Learning</title>
+      <link>https://mojmirmutny.github.io/publication/vornholt-2024/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://mojmirmutny.github.io/publication/vornholt-2024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
