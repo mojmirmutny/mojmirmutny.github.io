@@ -1,0 +1,23 @@
+# main links links
+main:
+
+  - title: "About"
+    url: /about/   
+
+  - title: "News"
+    url: /news/    
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Talks"
+    url: /talks/    
+
+  - title: "Blog Posts"
+    url: /year-archive/
+    
+  - title: "Code"
+    url: /code/   
+
+  - title: "ReALML Workshops"
+    url: https://realworldml.github.io/  

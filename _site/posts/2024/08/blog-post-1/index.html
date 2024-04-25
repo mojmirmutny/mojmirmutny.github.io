@@ -1,0 +1,576 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships - Mojmir Mutny</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mojmir Mutny">
+<meta property="og:title" content="Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships">
+
+
+  <link rel="canonical" href="http://localhost:4000/posts/2024/08/blog-post-1/">
+  <meta property="og:url" content="http://localhost:4000/posts/2024/08/blog-post-1/">
+
+
+
+  <meta property="og:description" content="In this blog I discuss relation between greedy algorithm and Frank-wolfe on a convex relaxation in the context of Optimal Experiment Design objectives.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2024-04-22T00:00:00-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mojmir Mutny",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Mojmir Mutny Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Mojmir Mutny</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/news/">News</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/code/">Code</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://realworldml.github.io/">ReALML Workshops</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/avatar.jpg" class="author__avatar" alt="Mojmir Mutny">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Mojmir Mutny</h3>
+    
+    <p class="author__bio"><p>I am a postdoctoral researcher at ETH Zurich working at the interesection of Machine Learning and Optimal Experiment Design – addressing the search for the most informative experiments. I work in the research group of <a href="https://las.inf.ethz.ch/krausea">Andreas Krause</a>. I am passionate about <strong>laboratory automation</strong> and <strong>protein design</strong>, and <strong>AI4Science</strong> revolution.</p>
+</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Zurich</li>
+      
+      
+        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>ETH Zurich</li>
+      
+      
+      
+        <li><a href="mailto:mojmir.mutny@inf.ethz.ch"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+            
+      
+        <li><a href="https://scholar.google.com/citations?user=6Im5pv4AAAAJ&hl"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://orcid.org/0009-0002-8963-9291"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/Mojusko"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+        <li><a href="https://twitter.com/mutny_ml"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)</a></li>
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships">
+    <meta itemprop="description" content="In this blog I discuss relation between greedy algorithm and Frank-wolfe on a convex relaxation in the context of Optimal Experiment Design objectives.">
+    <meta itemprop="datePublished" content="April 22, 2024">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  11 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-04-22T00:00:00-07:00">April 22, 2024</time></p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>In this blog I discuss relation between greedy algorithm and Frank-wolfe on a convex relaxation in the context of Optimal Experiment Design objectives.</p>
+
+<!-- more -->
+<script>
+
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<h2 id="background">Background</h2>
+
+<p>This is my first blog post. I am still experimenting with this format, so I apologize if the format or pacing is off. Until recently, I didn’t feel that this medium was suitable for communicating results. However, I have noticed that there are many small or speculative results I would like to share with others, beyond the classical publication scheme. My goal is not to attract a more general audience, but rather to address the same scientific/engineering audience by providing quick, small results that might not be suitable for a traditional scientific paper.</p>
+
+<h2 id="experiment-design-problem">Experiment Design Problem</h2>
+<p>For the first blog I chose to write about a greedy algorithm and its role in experiment design. Classical setup of experiment design in term discrete sets goes like this. It also relates to a question after a talk I gave recenly. I will elaborate on this later.</p>
+
+<p>Suppose there set of experiments $V$, where $v \in V$ is the experiment. Additionally, there is a budget $T$, and we would like to select a subset $S\subset V$, $|S|&lt;T$ such that some utility of the experiments is maximized. In particular,</p>
+
+\[S^* = \max_{S \subset V, |S| \leq T} E(S)\]
+
+<p>We will focus on the class of problems that arise when fitting linear regression of the set of experiments in $S$, represented by covariates $\{\Phi_i\}$. These objectives have usually a form:</p>
+
+\[E(S) = s\left(\sum_{i \in S} \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>where the $\lambda$ is due to regularization and $s$ is the so called scalarization function. The famed examples are with $s(A) = \log\det(A)$, or $s(A) = 1/\operatorname{Tr}(A^{-1})$. The role of scalarization is to ensure total order in the space of utilities. For more details look below in the reference, and discussion of different scalarizations.</p>
+
+<h2 id="greedy-algorithm--discrete-gradient">Greedy Algorithm – Discrete Gradient</h2>
+<p>A greedy algorithm solution to this problem involves selecting the next element according to the rule:</p>
+
+\[\arg\max_{i} E(S \cup \\{ i \\} ).\]
+
+<p>The final solution is grown incrementally. This algorithm is immensely practical and forms the backbone of many applications. The greedy algorithm provably approximates the maximum if the objective happens to be submodular. This is a form of regularity of set function capturing diminishing returns. Naturally, as the experiment design objectives capture information they are either submodular or close to submodular. In some cases, the objective is submodular and we can prove constant-factor approximation guarantees.</p>
+
+<!-- The sub-optimality this structure gives is not not in the flavour that classical experiment design gives, whether -- namely whether as $T \rightarrow \infty$ we would be investing our experimental budget optimally. We will show this type of g
+
+ The guarantees focuses on how well the actual objective compares to the optimal objective for a fixed budget $T$. Lower bounds suggest that there is no algorithm to improve this guarantee on the objective (Nemhauser1978).  -->
+
+<h2 id="convex-relaxation--continuous-gradient">Convex Relaxation – Continuous Gradient</h2>
+
+<p>Classical experiment design does not solve this problem by applying greedy algorithm. At least not in the motivation. Instead, it introduces a relaxation to the objective, where the optimization problem is continuous. The textbook relaxation introduces:</p>
+
+\[\bar{E}(\eta) = s\left(T\sum_{i \in V}\eta_i \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>where, we sum on the ground set, and $\eta_i$ represents a normalized indication whether the element is selected. Normalized,because $\sum \eta_i = 1$. The relaxation proceeds by saying that $\eta_i \in (0,1)$. Then, the objective $\bar{E}$ is in fact convex on the simplex, $\Delta_V$. In fact, a way to view this is that the objective is convex in the space of psd matrices, where it is restricted to the space of atoms formed by positive definite matrices $\{ \Phi_i\Phi_i^\top \}$. In fact, we can view, as as being supported on $\{ \Phi_i\Phi_i^\top \}\cup \{\lambda\mathbf{I} \}$, and accept the regularization as part of the atom on which the solution is supported. With the overloading of the notation, the utility can be seen as a function on positive definite matrices:</p>
+
+\[\max_{\mathbf{\Sigma} \in \operatorname{conv}( \\{ \Phi_i\Phi_i^\top \\} )} \bar{E}(\mathbf{\mathbf{\Sigma}})\]
+
+<p>Clearly, we are not selecting the regularization through the optimization, but we can force it to be present at all times through the form of the update and initial point in the algorithm. Namely, we will define as a starting point of this optimization algorithm to be equal to $\mathbf{\Sigma}_0 = \mathbf{I}\lambda$.</p>
+
+<p>We apply a optimization procedure that works on constrained space of atoms that respects the constraints $\mathbf{\Sigma} \in \operatorname{conv}(\{\Phi_i\Phi_i^\top \})$, convex hull of the matrices – Frank-Wolfe. Frank-Wolfe proceeds by constructing a series of linearizations of the objective $\bar{E}$ at the iterates, and moves by performing a convex combination of the  maximizer of the linearization of $\bar{E}$, $\nabla \bar{E}$ and the current iterate. I think there are wonderful resources on Frank-Wolfe algorithm e.g. <a href="https://arxiv.org/abs/2311.05313">here</a>. Assuming you are familiar with Frank-Wolfe, lets go to the algorithm directly. 
+Starting with $\mathbf{\Sigma}_0=\lambda \mathbf{I}$, we iterate:</p>
+
+<ul>
+  <li>
+\[v_t = \arg\min_{v \in V} \operatorname{Tr}(\nabla\bar{E}(\mathbf{\Sigma}_t) \Phi_v\Phi_v^\top )\]
+  </li>
+  <li>
+\[\mathbf{\Sigma}_{t+1} = \alpha_t \Phi_{v_t} \Phi_{v_t}^\top +  (1-\alpha_t)\mathbf{\Sigma}_t\]
+  </li>
+</ul>
+
+<p>Notice that $\alpha_t \in (0,1)$ forms the step-size of the convex combination. Optimization literature suggests to pick this number using a line search to converge as fast as possible. In this blog we will use:
+\(\alpha_t = \frac{1}{t+1}\) 
+for two reasons.</p>
+
+<ol>
+  <li>
+    <p>The first reason is that this rule ensures that at any iteration $t$, the design is integral, in other words, $t\mathbf{\Sigma}_t$ is integral combination of elements from the base set. This way the relaxation is exact and we always work on the lattice of the relaxation only utilizing the continuous properties to define a gradient.</p>
+  </li>
+  <li>
+    <p>Secondly, we use this step size, as it always means that the contribution of the regularization stays constant and proportionally decreases with more data point.</p>
+  </li>
+</ol>
+
+<p>This way, the update looks very similar to the greedy algorithm only with the difference we use the gradient of the objective for the greedy step instead of the actual change in the <em>discrete gradient.</em></p>
+
+<h2 id="connection-when-the-two-are-the-same">Connection: When the two are the same?</h2>
+<p>The linearized and discrete gradient algorithms construct a surrogate objective that is being maximized. The two surrogates are different in general, but when they are the same? The answer is when the discrete and continuous relaxation gradient have the same extreme point. This is implied when for each vertex in $\Delta_V$, $\delta_v$</p>
+
+\[\begin{equation}\label{eq:condition-discrete}
+	\underbrace{\left(F\left(\frac{t}{t+1}\eta_{t}+ \frac{1}{1+t} \delta_x\right) - F(\eta_t)\right)}_{\text{Discrete gradient}} = \rho_t(\nabla F(\eta_t)^\top \delta_x) +C_t
+\end{equation}\]
+
+<p>where $C_t \in \mathbb{R}$ is a constant independent of $x$ and $\rho_t$ is monotone non-decreasing. The constant and the function $\rho_t$ can change with time $t$. Remarkably, there are many important problems when the two coincide. Let us prove this property for the prominent $\log\det$. In order to state the result, we work on the augmented simplex where $\eta(0)$ corresponds to the $\lambda \mathbf{I}$ just to keep track of it.</p>
+
+<p><strong>Proposition</strong>
+Let us consider the objective $F(\eta) = \log\det(\sum_{i=1}^n \eta(i) \Phi(x_i)\Phi(x_i)^\top + \mathbf{I} \eta(0))$ on augmented simplex, starting with the value $\eta$ s.t.  $\eta_0(0) = 1$.</p>
+
+<p><em>Proof</em></p>
+
+<p>Let us use a shorthand $\mathbf{V}(\eta) = \left(  \sum_{i=1}^T \eta(i) \Phi(x_i)\Phi(x_i)^\top + \mathbf{I} \eta(0) \right)$. The gradient is equal to:</p>
+
+\[\nabla F(\eta)_k = \Phi(x_k)^\top\mathbf{V}(\eta)^{-1}\Phi(x_k) ~ \text{for} ~ i \in \{1,\dots n\},\]
+
+<p>While the discrete gradient, using shorthand $C_t^\prime = \log\det(\mathbf{V}(\eta_t))$,</p>
+
+<p>\(dF_k  =  \log\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right) + \frac{1}{1+t}\Phi(x_k)\Phi(x_k)^\top \right) - C_t^\prime\)
+\(= \log\left(\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right)\right)\left(1 + \frac{1}{t}\Phi(x_k)^\top\mathbf{V}(\eta_t)^{-1}\Phi(x_k) \right)\right) - C_t^\prime\)
+\(=  \log\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right)\right) + \log\left(1 + \frac{1}{t} \nabla F(\eta_t)_k\right) - C_t^\prime + \rho_t(\nabla F(\eta_t)_k)\)</p>
+
+<p>where we have identified the constant and monotone function $\rho_t$.</p>
+
+<p>The relationship between greedy and Frank-Wolfe in this form gives us the ability to prove a suboptimality result of the greedy algorithm as:</p>
+
+\[\bar{E}(S^*) - E(S_T) \leq \frac{\bar{E}(\mathbf{\Sigma}^*) - E(\mathbf{\Sigma}_0)}{T} + L \frac{\log T}{T}\]
+
+<p>where $L$ is the Lipschitz constant of $\bar{E}$. The result follows by application of master theorem from Mutny (2024). This suggest by following greedy algorithm we eventually converge to the optimal proportion of experiment allocation. Note that this is different that proving classical submodular guarantees such as</p>
+
+\[E(S_T) \geq (1-e^{T/\tau}) E(S^*_\tau).\]
+
+<p>where we compare to $S^*_\tau$ which is the best solution with budget $\tau$. The first guarantee has consistency flavor whereas the other is approximation guarantee.</p>
+
+<p>While the discrete algorithm seems appealing, it has some limited applicability in more complicated domains beyond simple ground sets of $V$. This difficulty is at the core of my paper about Experiment Design in Markov chains (Mutny e.t al. (2023)).</p>
+
+<h2 id="relationships">Relationships</h2>
+<p>Indeed the relationship between greedy algorithm and this convex relaxation has been known at least since 1970s in the experimental literature. See for example, Whittles (1973) paper on this topic among others. In fact, the belief, and the sentiment presented in that paper then was that by following greedy you are a lot more suboptimal than just optimizing quickly and then rounding. If experiments are no longer deterministic but instead follow a stochastic policy, the perspective with rounding is hard to execute. We will look into this in the next blog post.</p>
+
+<p>Its remarkable that exactly for the case of submodular $E$, we can show that the greedy is optimal. This perhaps hints at the deeper connection between submodularity, greedy and Frank-Wolfe with this choice of step-size.</p>
+
+<p>Let me return to the question I got after a talk. Notice that the relaxation depends on $T$,</p>
+
+\[\bar{E}(\eta) = s\left(T\sum_{i \in V}\eta_i \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>which is not surprising since, but perhaps unclear how to construct anytime result. Greedy algorithm seem not to care about total budget $T$. In order to solve the optimal experiment design we need to know $T$ in advance. This opens a question how to convert the procedure to have anytime guarantee or at least be executed at the greedy algorithm. In fact, the answer is to do the same thing as greedy and view the initial point being the regularization instead of part of the objective. This way we obtain an anytime result. The only thing we loose is the optimality for the fixed $T$, but this is to be expected given the motivation.</p>
+
+<h2 id="citing-and-references">Citing and References</h2>
+<p>If you would like to know more about results like this, please consult my theis. Likewise, if you would like to cite this result that is more apopriate than this blog. The essence of this discussion appears in my PhD Thesis in section 3.4.6, alteit with some eratta that are corrected here, namely one inequality should be equality. I do not claim to be the first to notice this, I know this from Whittle (1973).</p>
+
+<p><em>Mojmir Mutny, Modern Adaptive Experiment Design: Machine Learning Perspective, 2024. PhD Thesis ETH Zurich.</em></p>
+
+<h5 id="references">References</h5>
+<ol>
+  <li>Nemhauser, George L.; Wolsey, Laurence A.; Fisher, Marshall L., “An analysis of approximations for maximizing submodular set functions—I”, 1978, Mathematical Programming.</li>
+  <li>Krause, Andreas; Guestrin, Carlos, “Nonmyopic active learning of gaussian processes: an exploration-exploitation approach”, 2007, Proceedings of the 24th International Conference on Machine Learning.</li>
+  <li>Krause, Andreas; Guestrin, Carlos, “Optimal nonmyopic value of information in graphical models: efficient algorithms and theoretical limits”, 2005. This work does not specify a venue as it appears to be a file citation possibly intended for personal use.</li>
+  <li>Mutný, Mojmír; Janik, Tadeusz; Krause, Andreas, “Active Exploration via Experiment Design in Markov Chains”, 2023, Proceedings of the 26th International Conference on Artificial Intelligence and Statistics (AISTATS).</li>
+  <li>Whittle, Perer, “Some general points in the theory of optimal experimental design”, 1973, Journal of the Royal Statistical Society: Series B (Methodological)</li>
+  <li>Pokutta Sebastian, “The Frank-Wolfe algorithm: a short introduction”, 2023, arxiv 2311.05313</li>
+</ol>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#convex-optimization" class="page__taxonomy-item" rel="tag">convex optimization</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#experiment-design" class="page__taxonomy-item" rel="tag">experiment design</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#theory" class="page__taxonomy-item" rel="tag">theory</a>
+    
+    </span>
+  </p>
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/2024/08/blog-post-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2024/08/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2024/08/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="http://github.com/Mojusko"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2024 Mojmir Mutny. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-25T06:25:47-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mojmir Mutny</title><subtitle>personal description</subtitle><author><name>Mojmir Mutny</name><email>mojmir.mutny@inf.ethz.ch</email></author><entry><title type="html">Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships</title><link href="http://localhost:4000/posts/2024/08/blog-post-1/" rel="alternate" type="text/html" title="Greedy algorithm and Frank-Wolfe on a convex relaxation: relationships" /><published>2024-04-22T00:00:00-07:00</published><updated>2024-04-22T00:00:00-07:00</updated><id>http://localhost:4000/posts/2024/08/blog-post-1</id><content type="html" xml:base="http://localhost:4000/posts/2024/08/blog-post-1/"><![CDATA[<p>In this blog I discuss relation between greedy algorithm and Frank-wolfe on a convex relaxation in the context of Optimal Experiment Design objectives.</p>
+
+<!-- more -->
+<script>
+
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<h2 id="background">Background</h2>
+
+<p>This is my first blog post. I am still experimenting with this format, so I apologize if the format or pacing is off. Until recently, I didn’t feel that this medium was suitable for communicating results. However, I have noticed that there are many small or speculative results I would like to share with others, beyond the classical publication scheme. My goal is not to attract a more general audience, but rather to address the same scientific/engineering audience by providing quick, small results that might not be suitable for a traditional scientific paper.</p>
+
+<h2 id="experiment-design-problem">Experiment Design Problem</h2>
+<p>For the first blog I chose to write about a greedy algorithm and its role in experiment design. Classical setup of experiment design in term discrete sets goes like this. It also relates to a question after a talk I gave recenly. I will elaborate on this later.</p>
+
+<p>Suppose there set of experiments $V$, where $v \in V$ is the experiment. Additionally, there is a budget $T$, and we would like to select a subset $S\subset V$, $|S|&lt;T$ such that some utility of the experiments is maximized. In particular,</p>
+
+\[S^* = \max_{S \subset V, |S| \leq T} E(S)\]
+
+<p>We will focus on the class of problems that arise when fitting linear regression of the set of experiments in $S$, represented by covariates $\{\Phi_i\}$. These objectives have usually a form:</p>
+
+\[E(S) = s\left(\sum_{i \in S} \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>where the $\lambda$ is due to regularization and $s$ is the so called scalarization function. The famed examples are with $s(A) = \log\det(A)$, or $s(A) = 1/\operatorname{Tr}(A^{-1})$. The role of scalarization is to ensure total order in the space of utilities. For more details look below in the reference, and discussion of different scalarizations.</p>
+
+<h2 id="greedy-algorithm--discrete-gradient">Greedy Algorithm – Discrete Gradient</h2>
+<p>A greedy algorithm solution to this problem involves selecting the next element according to the rule:</p>
+
+\[\arg\max_{i} E(S \cup \\{ i \\} ).\]
+
+<p>The final solution is grown incrementally. This algorithm is immensely practical and forms the backbone of many applications. The greedy algorithm provably approximates the maximum if the objective happens to be submodular. This is a form of regularity of set function capturing diminishing returns. Naturally, as the experiment design objectives capture information they are either submodular or close to submodular. In some cases, the objective is submodular and we can prove constant-factor approximation guarantees.</p>
+
+<!-- The sub-optimality this structure gives is not not in the flavour that classical experiment design gives, whether -- namely whether as $T \rightarrow \infty$ we would be investing our experimental budget optimally. We will show this type of g
+
+ The guarantees focuses on how well the actual objective compares to the optimal objective for a fixed budget $T$. Lower bounds suggest that there is no algorithm to improve this guarantee on the objective (Nemhauser1978).  -->
+
+<h2 id="convex-relaxation--continuous-gradient">Convex Relaxation – Continuous Gradient</h2>
+
+<p>Classical experiment design does not solve this problem by applying greedy algorithm. At least not in the motivation. Instead, it introduces a relaxation to the objective, where the optimization problem is continuous. The textbook relaxation introduces:</p>
+
+\[\bar{E}(\eta) = s\left(T\sum_{i \in V}\eta_i \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>where, we sum on the ground set, and $\eta_i$ represents a normalized indication whether the element is selected. Normalized,because $\sum \eta_i = 1$. The relaxation proceeds by saying that $\eta_i \in (0,1)$. Then, the objective $\bar{E}$ is in fact convex on the simplex, $\Delta_V$. In fact, a way to view this is that the objective is convex in the space of psd matrices, where it is restricted to the space of atoms formed by positive definite matrices $\{ \Phi_i\Phi_i^\top \}$. In fact, we can view, as as being supported on $\{ \Phi_i\Phi_i^\top \}\cup \{\lambda\mathbf{I} \}$, and accept the regularization as part of the atom on which the solution is supported. With the overloading of the notation, the utility can be seen as a function on positive definite matrices:</p>
+
+\[\max_{\mathbf{\Sigma} \in \operatorname{conv}( \\{ \Phi_i\Phi_i^\top \\} )} \bar{E}(\mathbf{\mathbf{\Sigma}})\]
+
+<p>Clearly, we are not selecting the regularization through the optimization, but we can force it to be present at all times through the form of the update and initial point in the algorithm. Namely, we will define as a starting point of this optimization algorithm to be equal to $\mathbf{\Sigma}_0 = \mathbf{I}\lambda$.</p>
+
+<p>We apply a optimization procedure that works on constrained space of atoms that respects the constraints $\mathbf{\Sigma} \in \operatorname{conv}(\{\Phi_i\Phi_i^\top \})$, convex hull of the matrices – Frank-Wolfe. Frank-Wolfe proceeds by constructing a series of linearizations of the objective $\bar{E}$ at the iterates, and moves by performing a convex combination of the  maximizer of the linearization of $\bar{E}$, $\nabla \bar{E}$ and the current iterate. I think there are wonderful resources on Frank-Wolfe algorithm e.g. <a href="https://arxiv.org/abs/2311.05313">here</a>. Assuming you are familiar with Frank-Wolfe, lets go to the algorithm directly. 
+Starting with $\mathbf{\Sigma}_0=\lambda \mathbf{I}$, we iterate:</p>
+
+<ul>
+  <li>
+\[v_t = \arg\min_{v \in V} \operatorname{Tr}(\nabla\bar{E}(\mathbf{\Sigma}_t) \Phi_v\Phi_v^\top )\]
+  </li>
+  <li>
+\[\mathbf{\Sigma}_{t+1} = \alpha_t \Phi_{v_t} \Phi_{v_t}^\top +  (1-\alpha_t)\mathbf{\Sigma}_t\]
+  </li>
+</ul>
+
+<p>Notice that $\alpha_t \in (0,1)$ forms the step-size of the convex combination. Optimization literature suggests to pick this number using a line search to converge as fast as possible. In this blog we will use:
+\(\alpha_t = \frac{1}{t+1}\) 
+for two reasons.</p>
+
+<ol>
+  <li>
+    <p>The first reason is that this rule ensures that at any iteration $t$, the design is integral, in other words, $t\mathbf{\Sigma}_t$ is integral combination of elements from the base set. This way the relaxation is exact and we always work on the lattice of the relaxation only utilizing the continuous properties to define a gradient.</p>
+  </li>
+  <li>
+    <p>Secondly, we use this step size, as it always means that the contribution of the regularization stays constant and proportionally decreases with more data point.</p>
+  </li>
+</ol>
+
+<p>This way, the update looks very similar to the greedy algorithm only with the difference we use the gradient of the objective for the greedy step instead of the actual change in the <em>discrete gradient.</em></p>
+
+<h2 id="connection-when-the-two-are-the-same">Connection: When the two are the same?</h2>
+<p>The linearized and discrete gradient algorithms construct a surrogate objective that is being maximized. The two surrogates are different in general, but when they are the same? The answer is when the discrete and continuous relaxation gradient have the same extreme point. This is implied when for each vertex in $\Delta_V$, $\delta_v$</p>
+
+\[\begin{equation}\label{eq:condition-discrete}
+	\underbrace{\left(F\left(\frac{t}{t+1}\eta_{t}+ \frac{1}{1+t} \delta_x\right) - F(\eta_t)\right)}_{\text{Discrete gradient}} = \rho_t(\nabla F(\eta_t)^\top \delta_x) +C_t
+\end{equation}\]
+
+<p>where $C_t \in \mathbb{R}$ is a constant independent of $x$ and $\rho_t$ is monotone non-decreasing. The constant and the function $\rho_t$ can change with time $t$. Remarkably, there are many important problems when the two coincide. Let us prove this property for the prominent $\log\det$. In order to state the result, we work on the augmented simplex where $\eta(0)$ corresponds to the $\lambda \mathbf{I}$ just to keep track of it.</p>
+
+<p><strong>Proposition</strong>
+Let us consider the objective $F(\eta) = \log\det(\sum_{i=1}^n \eta(i) \Phi(x_i)\Phi(x_i)^\top + \mathbf{I} \eta(0))$ on augmented simplex, starting with the value $\eta$ s.t.  $\eta_0(0) = 1$.</p>
+
+<p><em>Proof</em></p>
+
+<p>Let us use a shorthand $\mathbf{V}(\eta) = \left(  \sum_{i=1}^T \eta(i) \Phi(x_i)\Phi(x_i)^\top + \mathbf{I} \eta(0) \right)$. The gradient is equal to:</p>
+
+\[\nabla F(\eta)_k = \Phi(x_k)^\top\mathbf{V}(\eta)^{-1}\Phi(x_k) ~ \text{for} ~ i \in \{1,\dots n\},\]
+
+<p>While the discrete gradient, using shorthand $C_t^\prime = \log\det(\mathbf{V}(\eta_t))$,</p>
+
+<p>\(dF_k  =  \log\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right) + \frac{1}{1+t}\Phi(x_k)\Phi(x_k)^\top \right) - C_t^\prime\)
+\(= \log\left(\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right)\right)\left(1 + \frac{1}{t}\Phi(x_k)^\top\mathbf{V}(\eta_t)^{-1}\Phi(x_k) \right)\right) - C_t^\prime\)
+\(=  \log\det\left(\frac{t}{t+1}\mathbf{V}\left(\eta_t\right)\right) + \log\left(1 + \frac{1}{t} \nabla F(\eta_t)_k\right) - C_t^\prime + \rho_t(\nabla F(\eta_t)_k)\)</p>
+
+<p>where we have identified the constant and monotone function $\rho_t$.</p>
+
+<p>The relationship between greedy and Frank-Wolfe in this form gives us the ability to prove a suboptimality result of the greedy algorithm as:</p>
+
+\[\bar{E}(S^*) - E(S_T) \leq \frac{\bar{E}(\mathbf{\Sigma}^*) - E(\mathbf{\Sigma}_0)}{T} + L \frac{\log T}{T}\]
+
+<p>where $L$ is the Lipschitz constant of $\bar{E}$. The result follows by application of master theorem from Mutny (2024). This suggest by following greedy algorithm we eventually converge to the optimal proportion of experiment allocation. Note that this is different that proving classical submodular guarantees such as</p>
+
+\[E(S_T) \geq (1-e^{T/\tau}) E(S^*_\tau).\]
+
+<p>where we compare to $S^*_\tau$ which is the best solution with budget $\tau$. The first guarantee has consistency flavor whereas the other is approximation guarantee.</p>
+
+<p>While the discrete algorithm seems appealing, it has some limited applicability in more complicated domains beyond simple ground sets of $V$. This difficulty is at the core of my paper about Experiment Design in Markov chains (Mutny e.t al. (2023)).</p>
+
+<h2 id="relationships">Relationships</h2>
+<p>Indeed the relationship between greedy algorithm and this convex relaxation has been known at least since 1970s in the experimental literature. See for example, Whittles (1973) paper on this topic among others. In fact, the belief, and the sentiment presented in that paper then was that by following greedy you are a lot more suboptimal than just optimizing quickly and then rounding. If experiments are no longer deterministic but instead follow a stochastic policy, the perspective with rounding is hard to execute. We will look into this in the next blog post.</p>
+
+<p>Its remarkable that exactly for the case of submodular $E$, we can show that the greedy is optimal. This perhaps hints at the deeper connection between submodularity, greedy and Frank-Wolfe with this choice of step-size.</p>
+
+<p>Let me return to the question I got after a talk. Notice that the relaxation depends on $T$,</p>
+
+\[\bar{E}(\eta) = s\left(T\sum_{i \in V}\eta_i \Phi_i \Phi_i^\top + \mathbf{I} \lambda\right),\]
+
+<p>which is not surprising since, but perhaps unclear how to construct anytime result. Greedy algorithm seem not to care about total budget $T$. In order to solve the optimal experiment design we need to know $T$ in advance. This opens a question how to convert the procedure to have anytime guarantee or at least be executed at the greedy algorithm. In fact, the answer is to do the same thing as greedy and view the initial point being the regularization instead of part of the objective. This way we obtain an anytime result. The only thing we loose is the optimality for the fixed $T$, but this is to be expected given the motivation.</p>
+
+<h2 id="citing-and-references">Citing and References</h2>
+<p>If you would like to know more about results like this, please consult my theis. Likewise, if you would like to cite this result that is more apopriate than this blog. The essence of this discussion appears in my PhD Thesis in section 3.4.6, alteit with some eratta that are corrected here, namely one inequality should be equality. I do not claim to be the first to notice this, I know this from Whittle (1973).</p>
+
+<p><em>Mojmir Mutny, Modern Adaptive Experiment Design: Machine Learning Perspective, 2024. PhD Thesis ETH Zurich.</em></p>
+
+<h5 id="references">References</h5>
+<ol>
+  <li>Nemhauser, George L.; Wolsey, Laurence A.; Fisher, Marshall L., “An analysis of approximations for maximizing submodular set functions—I”, 1978, Mathematical Programming.</li>
+  <li>Krause, Andreas; Guestrin, Carlos, “Nonmyopic active learning of gaussian processes: an exploration-exploitation approach”, 2007, Proceedings of the 24th International Conference on Machine Learning.</li>
+  <li>Krause, Andreas; Guestrin, Carlos, “Optimal nonmyopic value of information in graphical models: efficient algorithms and theoretical limits”, 2005. This work does not specify a venue as it appears to be a file citation possibly intended for personal use.</li>
+  <li>Mutný, Mojmír; Janik, Tadeusz; Krause, Andreas, “Active Exploration via Experiment Design in Markov Chains”, 2023, Proceedings of the 26th International Conference on Artificial Intelligence and Statistics (AISTATS).</li>
+  <li>Whittle, Perer, “Some general points in the theory of optimal experimental design”, 1973, Journal of the Royal Statistical Society: Series B (Methodological)</li>
+  <li>Pokutta Sebastian, “The Frank-Wolfe algorithm: a short introduction”, 2023, arxiv 2311.05313</li>
+</ol>]]></content><author><name>Mojmir Mutny</name><email>mojmir.mutny@inf.ethz.ch</email></author><category term="experiment design" /><category term="theory" /><category term="convex optimization" /><summary type="html"><![CDATA[In this blog I discuss relation between greedy algorithm and Frank-wolfe on a convex relaxation in the context of Optimal Experiment Design objectives.]]></summary></entry></feed>
