@@ -25,7 +25,7 @@ hr {
 </style>
 
 ![doexpy Image](https://github.com/Mojusko/experiment-design-mdp/blob/main/icon.png) 
-### Package 2: stpy
+### Package 1: doexpy
 A universal Active Learning (Design of Experiments) library using modern Machine Learning. Optimization of the most informative queries and policies, and much more! 
 - **Paper:** [NeurIPS 2024](https://arxiv.org/abs/2402.08406)
 - **GitHub Repository:** [stpy on GitHub](https://github.com/Mojusko/experiment-design-mdp)
