@@ -24,10 +24,19 @@ hr {
 }
 </style>
 
-![stpy Image](/files/images/stpy.png) 
+![doexpy Image](https://github.com/Mojusko/experiment-design-mdp/blob/main/icon.png) 
 ### Package 2: stpy
-This code implements a general purpose
-- **Tutorial:** [stpy on GitHub](https://github.com/Mojusko/stpy/tutorial)
+A universal Active Learning (Design of Experiments) library using modern Machine Learning. Optimization of the most informative queries and policies, and much more! 
+- **Paper:** [NeurIPS 2024](https://arxiv.org/abs/2402.08406)
+- **GitHub Repository:** [stpy on GitHub](https://github.com/Mojusko/experiment-design-mdp)
+
+
+***
+
+![stpy Image](https://github.com/Mojusko/stpy/blob/stable/stpy.png) 
+### Package 2: stpy
+This code implements a general purpose stochastic process fiting, Gaussian process, Poisson Point processes, various emebeddings etc. 
+- **Tutorial:** [on GitHub](https://github.com/Mojusko/stpy/tree/stable/tutorials)
 - **GitHub Repository:** [stpy on GitHub](https://github.com/Mojusko/stpy)
 
 ***
