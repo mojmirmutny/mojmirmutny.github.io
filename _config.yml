@@ -24,7 +24,7 @@ author:
   avatar           : "avatar.jpg"
   name             : "Mojmir Mutny"
   pronouns         : # example: "she/her"  
-  bio              : "I am a postdoctoral researcher at ETH Zurich working at the interesection of Machine Learning and Optimal Experiment Design -- addressing the search for the most informative experiments. I work in the research group of [Andreas Krause](https://las.inf.ethz.ch/krausea). I am passionate about **laboratory automation** and **protein design**, and **AI4Science** revolution."
+  bio              : "I am a postdoctoral researcher at ETH Zurich working at the intersection of Machine Learning and Optimal Experiment Design -- addressing the search for the most informative experiments. I work in the research group of [Andreas Krause](https://las.inf.ethz.ch/krausea). I am passionate about **laboratory automation** and **protein design**, and **AI4Science** revolution."
   location         : "Zurich"
   employer         : "ETH Zurich"
   interests        : AI4Science, Machine Learning, Experiment Design, Active Learning, Laboratory Automation, Protein Design

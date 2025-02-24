@@ -1,0 +1,18 @@
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+/usr/bin/ruby.ruby3.3 extconf.rb
+creating Makefile
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-vxpr78 sitelibdir\=./.gem.20240902-904886-vxpr78 clean
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-vxpr78 sitelibdir\=./.gem.20240902-904886-vxpr78
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-vxpr78 sitelibdir\=./.gem.20240902-904886-vxpr78 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240902-904886-vxpr78/racc
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-vxpr78 sitelibdir\=./.gem.20240902-904886-vxpr78 clean

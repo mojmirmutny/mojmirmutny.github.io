@@ -1,0 +1,20 @@
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/unf_ext-0.0.9.1/ext/unf_ext
+/usr/bin/ruby.ruby3.3 extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/unf_ext-0.0.9.1/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-z7fga9 sitelibdir\=./.gem.20240902-904886-z7fga9 clean
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/unf_ext-0.0.9.1/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-z7fga9 sitelibdir\=./.gem.20240902-904886-z7fga9
+compiling unf.cc
+cc1plus: warning: command-line option ‘-std=gnu99’ is valid for C/ObjC but not for C++
+linking shared-object unf_ext.so
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/unf_ext-0.0.9.1/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-z7fga9 sitelibdir\=./.gem.20240902-904886-z7fga9 install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20240902-904886-z7fga9
+
+current directory: /home/mojko/Documents/PhD_Projects/website/mojmirmutny.github.io/bundle/ruby/3.3.0/gems/unf_ext-0.0.9.1/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20240902-904886-z7fga9 sitelibdir\=./.gem.20240902-904886-z7fga9 clean
