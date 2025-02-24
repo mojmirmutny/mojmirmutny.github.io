@@ -13,7 +13,11 @@ redirect_from:
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 <bsky-embed
   username="mmutny.bsky.social"
+  link-target="_blank"
+  link-image="true"
   mode=""
+  load-more="true"
+  disable-styles="false"
   >
 </bsky-embed>
 
