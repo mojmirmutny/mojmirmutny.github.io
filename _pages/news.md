@@ -11,11 +11,12 @@ redirect_from:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Have you ever wondered how to address diversity and increase hit rate in your ML-driven sequential optimization (directed evolution) of enzymes? Small data? No problem, lets select the most informative one! Check out our work featured on front cover with Tobias (<a href="https://twitter.com/t_vornholt?ref_src=twsrc%5Etfw">@t_vornholt</a>)! <a href="https://t.co/qxvKxvPjUe">https://t.co/qxvKxvPjUe</a></p>&mdash; Mojmir Mutny (@mutny_ml) <a href="https://twitter.com/mutny_ml/status/1821893103491395601?ref_src=twsrc%5Etfw">August 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
+
 <bsky-embed
   username="mmutny.bsky.social"
   link-target="_blank"
   link-image="true"
-  mode=""
+  limit="15"
   load-more="true"
   disable-styles="false"
   >
