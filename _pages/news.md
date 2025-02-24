@@ -13,9 +13,9 @@ redirect_from:
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 <bsky-embed
   username="mmutny"
-  mode="light"
+  mode=""
   limit="10"
 >
 </bsky-embed>
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7239560291414425602" height="1233" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<!-- <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7239560291414425602" height="1233" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> -->
