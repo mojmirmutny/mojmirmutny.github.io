@@ -12,9 +12,9 @@ redirect_from:
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 <bsky-embed
-  username="vincentwill.com"
-  mode="dark"
-  limit="5"
+  username="mmutny"
+  mode="light"
+  limit="10"
 >
 </bsky-embed>
 
