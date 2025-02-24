@@ -14,7 +14,7 @@ redirect_from:
 <bsky-embed
   username="mmutny.bsky.social"
   mode=""
-  limit="20"
+  limit="5"
   load-more="true"
   >
 </bsky-embed>
