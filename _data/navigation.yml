@@ -1,6 +1,9 @@
 # main links links
 main:
 
+  - title: "About"
+    url: /about/   
+
   - title: "News"
     url: /news/    
 
@@ -18,3 +21,6 @@ main:
 
   - title: "ReALML Workshops"
     url: https://realworldml.github.io/  
+
+  - title: "Drylab Meets Wetlab Workshop"
+    url: https://mlbiocat.github.io/mlbiocat2025/ 
