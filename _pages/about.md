@@ -13,8 +13,7 @@ redirect_from:
   My current research focuses on <strong>active learning</strong> and <strong>efficient fine-tuning</strong>, aiming to identify the most informative data to improve machine learning models and enhance their resource efficiency. I work on <strong>LLM fine-tuning</strong> and improving the <strong>reliability of large language models in generation</strong>. I have a background and strong interest in 
   <em>Bayesian optimization, kernel methods, sensor selection, control theory</em>, and 
   <em>mathematical optimization</em>. My algorithms have been applied to 
-  <strong>machine calibration</strong>, <strong>spatial analysis</strong>, and chiefly <strong>enzyme design</strong>. 
-  I am passionate about <strong>high-throughput dataset generation</strong>.
+  <strong>machine calibration</strong>, <strong>spatial analysis</strong>, and <strong>enzyme design</strong>. 
 </p>
 
 
