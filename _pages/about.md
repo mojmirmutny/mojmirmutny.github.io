@@ -6,13 +6,17 @@ redirect_from:
   - /about
   - /about.html
 ---
-<p>I am a postdoctoral researcher at ETH Zurich working in the research group of 
+<p>Machine learning scienstist at ETH Zurich working in the research group of 
 <a href="https://las.inf.ethz.ch/krausea" target="_blank" rel="noopener">Andreas Krause</a>, 
 <a href="https://las.inf.ethz.ch/" target="_blank" rel="noopener">Learning and Adaptive Systems group</a>. 
-My current research work mostly focuses on modern instances of <strong>Optimal Experiment Design</strong> – 
-addressing the search for the most informative experiments in order to infer an unknown statistical quantity. I am also interested in/have worked on <em>Bayesian optimization, kernel methods, sensor selection, control, 
-bandit algorithms</em> and <em>convex optimization</em>. Some of my algorithms have found application in 
-machine calibration, spatial analysis and <strong>protein design</strong>. I am passionate about laboratory automation and high-througput dataset generation</p>
+<p>
+  My current research focuses on <strong>active learning</strong> and <strong>efficient fine-tuning</strong>, aiming to identify the most informative data to improve machine learning models and enhance their resource efficiency. I work on <strong>LLM fine-tuning</strong> and improving the <strong>reliability of large language models in generation</strong>. I have a background and strong interest in 
+  <em>Bayesian optimization, kernel methods, sensor selection, control theory</em>, and 
+  <em>mathematical optimization</em>. My algorithms have been applied to 
+  <strong>machine calibration</strong>, <strong>spatial analysis</strong>, and chiefly <strong>enzyme design</strong>. 
+  I am passionate about <strong>high-throughput dataset generation</strong>.
+</p>
+
 
 
 <style>
