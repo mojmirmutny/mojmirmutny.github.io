@@ -24,7 +24,7 @@ author:
   avatar           : "avatar.jpg"
   name             : "Mojmir Mutny"
   pronouns         : # example: "she/her"  
-  bio              : "Machine learning scientist at *ETH Zurich* working in Learning and Adaptive Systems group. My current research focuses on **active learning** and efficient **fine-tuning**, aiming to identify the most informative data to improve machine learning models. I work on improving the reliability of **LLMs** in generation and exploring **new enzymes**. I have a background in *Bayesian optimization, kernel methods, sensor selection, control*, and *optimization*. My algorithms have been applied to machine calibration, laboratory automation, spatial analysis, and **enzyme design**."
+  bio              : "Machine learning scienstist currently a postdoct at Broad Institute of MIT and Harvard. In the past I was at *ETH Zurich* working in Learning and Adaptive Systems group. My current research focuses on **active learning** and efficient **fine-tuning**, aiming to identify the most informative data to improve machine learning models. I work on improving the reliability of **LLMs** in generation and exploring **new enzymes**. I have a background in *Bayesian optimization, kernel methods, sensor selection, control*, and *optimization*. My algorithms have been applied to machine calibration, laboratory automation, spatial analysis, and **enzyme and antibody design**."
 
   location         : "Zurich"
   employer         : "ETH Zurich"
