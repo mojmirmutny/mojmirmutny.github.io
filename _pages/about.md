@@ -6,7 +6,7 @@ redirect_from:
   - /about
   - /about.html
 ---
-<p>Machine learning scienstist currently a postdoct at Broad Institute of MIT and Harvard. In the past I was at ETH Zurich working in the research group of 
+<p>Machine learning scienstist currently a postdoc at Broad Institute of MIT and Harvard. In the past I was at ETH Zurich working in the research group of 
 <a href="https://las.inf.ethz.ch/krausea" target="_blank" rel="noopener">Andreas Krause</a>, 
 <a href="https://las.inf.ethz.ch/" target="_blank" rel="noopener">Learning and Adaptive Systems group</a>. 
 <p>
